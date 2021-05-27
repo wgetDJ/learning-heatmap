@@ -4,7 +4,7 @@ body {
     background-color: #eeeeee;
     color: #111111;
     font-size: 16px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .content {
@@ -40,9 +40,41 @@ body {
     grid-gap: 2px;
 } */
 .heatmap div {
-    background-color: #d1d1d1;
+    background-color: #005c99;
     height: 15px;
     border-radius: 50%;
+}
+.heatmap div:hover,
+.colors div:hover {
+    position: relative;
+}
+.heatmap div span b {
+    color: #eeeeee;
+    text-transform: uppercase;
+}
+.heatmap div span,
+.colors div span {
+    display: none;
+}
+.heatmap div:hover span,
+.colors div:hover span {
+    padding: 5px;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    border-radius: 2px;
+    display: block;
+    z-index: 1000000;
+    background: #111111;
+    color: #bdbdbd;
+    left: 0px;
+    width: 210px;
+    position: absolute;
+    top: -30px;
+    text-decoration: none;
+}
+.colors div:hover span {
+    width: 130px;
+    color: #eeeeee;
 }
 
 .colors {
@@ -55,20 +87,23 @@ body {
     height: 15px;
     background-color: #005c99;
 }
-#blue-1 {
-    opacity: 20%;
+#inactive {
+    background-color: #d8d8d8;
 }
-#blue-2 {
-    opacity: 40%;
+#done-20 {
+    background-color: #005c9933;
 }
-#blue-3 {
-    opacity: 60%;
+#done-40 {
+    background-color: #005c9966;
 }
-#blue-4 {
-    opacity: 80%;
+#done-60 {
+    background-color: #005c9999;
 }
-#blue-5 {
-    opacity: 100%;
+#done-80 {
+    background-color: #005c99cc;
+}
+#done-100 {
+    background-color: #005c99ff;
 }
 
 .dayData {

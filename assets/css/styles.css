@@ -10,26 +10,19 @@ body {
 .content {
     width: 899px;
     min-width: 899px;
-    margin: 100px auto;
-}
-
-.header {
-    text-align: center;
+    margin: 50px auto;
+    padding: 0 100px;
 }
 
 .header h1 {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-}
-.header p {
-    text-transform: uppercase;
-    font-size: .9rem;
-    letter-spacing: .2rem;
+    font-weight: 500;
 }
 
 .heatmap {
-    margin-top: 100px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(53, 15px);
     grid-gap: 2px;
@@ -78,7 +71,7 @@ body {
 }
 
 .colors {
-    margin-top: 20px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(53, 15px);
     grid-gap: 2px;
@@ -111,7 +104,7 @@ body {
 }
 
 .dayData h1 {
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: 500;
@@ -121,4 +114,34 @@ body {
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: 700;
+}
+
+.dayData #list {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    grid-gap: 20px;
+    padding: 7.5px 0;
+}
+.dayData #list #done {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #6dfd6d;
+}
+.dayData #list #todo {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: .1rem;
+}
+/* .dayData #list #notDone {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ff5e5e;
+} */
+.dayData #list #onGoing {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
 }

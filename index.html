@@ -19,13 +19,12 @@
 	<div class="content">
 
 		<div class="header">
-			<h1>Dibyajyoti Mishra</h1>
-			<p>Daily Learning Goals Heatmap</p>
+			<h1>Daily Learning Goals Heatmap</h1>
 		</div>
 
 		<div class="heatmap">
 			<div id="done-80">
-				<span><b>6/70 Done</b> on 28 May 2021</span>
+				<span><b>6/7 Done</b> on 28 May 2021</span>
 			</div>
 			<div id="done-20">
 				<span><b>1/7 Done</b> on 27 May 2021</span>
@@ -60,14 +59,17 @@
 		</div>
 
 		<div class="dayData">
-			<h1>27 may 2021</h1>
+			<h1 id="currentDate"><script>currentDay();</script></h1>
 			<h2>TODO</h2>
 
-			<ul>
-				<li>Some</li>
-				<li>Some</li>
-				<li>Some</li>
-			</ul>
+			<div id="list">
+				<div id="done"></div>
+				<div id="todo">Design Heatmap</div>
+			</div>
+			<div id="list">
+				<div id="onGoing"></div>
+				<div id="todo">Design Heatmap</div>
+			</div>
 		</div>
 
 	</div>
